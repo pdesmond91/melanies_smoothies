@@ -44,7 +44,7 @@ if ingredients_list:
 if ingredients_list:
     ingredients_string = ''
 
-    for fruit_chosen in ingredients_string:
+    for fruit_chosen in ingredients_list:
         ingredients_string += fruit_chosen + ' '
         st.subheader(fruit_chosen + ' Nutrition Information')
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_chosen)
